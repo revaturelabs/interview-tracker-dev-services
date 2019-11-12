@@ -1,18 +1,17 @@
-package com.example.demo;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-import org.springframework.cloud.openfeign.EnableFeignClients;
-
-@EnableEurekaClient
 @SpringBootApplication
-@EnableFeignClients
-public class UserServiceApplication {
+@EnableZuulProxy
+@EnableEurekaClient
+public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserServiceApplication.class, args);
+		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
+
 }
