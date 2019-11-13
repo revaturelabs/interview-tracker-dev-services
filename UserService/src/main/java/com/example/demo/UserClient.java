@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import com.example.model.User;
+
 import feign.RequestLine;
 
 @FeignClient("users")
