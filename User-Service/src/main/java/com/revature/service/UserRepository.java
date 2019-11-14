@@ -8,7 +8,6 @@ import com.revature.model.UserBean;
 @Repository
 public interface UserRepository extends CrudRepository<UserBean,Integer> {
 	
-//	void save();
 	
 
 }

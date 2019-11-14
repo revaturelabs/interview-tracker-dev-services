@@ -3051,3 +3051,16 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2019-11-14 12:05:32,652 [Worker-283: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-11-14 12:05:32,666 [Worker-283: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-11-14 12:05:32,666 [Worker-283: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\User-Service\src\test\resources
+2019-11-14 12:09:50,952 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 12:09:50,953 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-14 12:09:50,957 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-14 12:09:50,959 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 12:09:50,959 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\User-Service\src\test\resources
+2019-11-14 12:13:41,465 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 12:13:41,469 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-14 12:13:41,475 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-14 12:13:41,497 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 12:13:41,497 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\User-Service\src\test\resources
+2019-11-14 12:16:58,908 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 12:16:58,909 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-14 12:16:58,932 [Worker-284: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

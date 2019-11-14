@@ -25,6 +25,11 @@ public class UserController {
 		
 	}
 	
+	/**
+	 * Created by Brittany Tinnin and William Liederer
+	 * Very basic method to save a user to database
+	 * @return
+	 */
 	 @GetMapping(value = "/users")
 	    public String save() {
 	        UserBean dev = new UserBean(2,"admin","admin");
