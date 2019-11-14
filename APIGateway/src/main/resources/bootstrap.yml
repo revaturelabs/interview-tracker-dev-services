@@ -12,7 +12,7 @@ spring:
     
 zuul:
   routes:
-    horror:
+    user-service:
       path: /user/**
-      service-id: userservice
+      service-id: user-service
       strip-prefix: false

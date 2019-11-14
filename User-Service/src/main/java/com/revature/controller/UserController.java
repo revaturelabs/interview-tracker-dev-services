@@ -40,7 +40,11 @@ public class UserController {
 		UserBean user = new UserBean(0, "anotherU", "pass");
         repository.save(user);
     }
-	
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 */
 	@PostMapping(value="/login")
 	public @ResponseBody UserBean login(@RequestBody UserBean user) {
 		System.out.println(user);
