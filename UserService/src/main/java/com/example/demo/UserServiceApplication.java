@@ -1,21 +1,25 @@
 package com.example.demo;
 
 
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringApplication; 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
+<<<<<<< HEAD
 
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+=======
+>>>>>>> LoginFeature
 
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableEurekaClient
+
 
 @SpringBootApplication
+<<<<<<< HEAD
 @EnableFeignClients
 
+=======
+>>>>>>> LoginFeature
 public class UserServiceApplication {
 
 	public static void main(String[] args) {

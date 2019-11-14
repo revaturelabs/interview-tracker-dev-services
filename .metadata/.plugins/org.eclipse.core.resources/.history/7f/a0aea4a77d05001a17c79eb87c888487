@@ -1,0 +1,26 @@
+server:
+  port: 8765
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+spring:
+  application:
+    name: Movie Zuul
+    
+zuul:
+  routes:
+    horror:
+      path: /horror/**
+      service-id: horror-stuff
+      strip-prefix: false
+    scifi:
+      path: /scifi/**
+<<<<<<< HEAD
+      service-id: scifi-stuff
+=======
+      service-id: scifi stuff
+>>>>>>> master
+      strip-prefix: false
