@@ -5,9 +5,12 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import com.example.model.User;
+
 import feign.RequestLine;
 
-@FeignClient("users")
+//@FeignClient("users")
+@FeignClient(name="service",configuration = FeignClientConfiguration.class)
 public interface UserClient {
 
 //	 	@RequestLine("GET /{isbn}")
