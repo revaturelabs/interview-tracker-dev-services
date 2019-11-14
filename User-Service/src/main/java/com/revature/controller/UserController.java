@@ -11,9 +11,18 @@ import com.revature.service.UserRepository;
 
 @RestController
 public class UserController {
-	@Autowired
+	
 	private UserRepository repository;
 	
+	public UserRepository getRepository() {
+		return repository;
+	}
+
+	@Autowired
+	public void setRepository(UserRepository repository) {
+		this.repository = repository;
+	}
+
 	List<UserBean> list;
 	
 	@GetMapping(value="/getUsers")
@@ -36,6 +45,11 @@ public class UserController {
 	        repository.save(dev);
 	        return "worked";
 	    }
+	 
+//	 @GetMapping(value="/login")
+//	 public String login() {
+//		 repository.
+//	 }
 	
 	
 	
