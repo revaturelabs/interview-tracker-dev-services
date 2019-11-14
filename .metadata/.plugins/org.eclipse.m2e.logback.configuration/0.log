@@ -3086,3 +3086,17 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2019-11-14 13:26:15,093 [Worker-309: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-11-14 13:26:15,109 [Worker-309: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-11-14 13:26:15,123 [Worker-309: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\User-Service\src\test\resources
+2019-11-14 13:36:20,530 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 13:36:20,530 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\APIGateway\src\test\resources
+2019-11-14 13:36:21,858 [Worker-303: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:ServiceRegistery:0.0.1-SNAPSHOT @ C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\ServiceRegistery\pom.xml.
+2019-11-14 13:36:23,033 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 13:36:23,034 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-14 13:36:23,037 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-14 13:36:23,038 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 13:36:23,038 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\ServiceRegistery\src\test\resources
+2019-11-14 13:36:24,350 [Worker-326: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:User-Service:0.0.1-SNAPSHOT @ C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\User-Service\pom.xml.
+2019-11-14 13:36:25,616 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 13:36:25,616 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-14 13:36:25,619 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-14 13:36:25,620 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-14 13:36:25,621 [Worker-326: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hello\Desktop\git_repo\P3 DevService\Interview-Tracker-Dev-Service\User-Service\src\test\resources
