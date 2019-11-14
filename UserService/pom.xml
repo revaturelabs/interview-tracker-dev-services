@@ -6,16 +6,10 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
-
 
 		<version>2.1.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 
-=======
-		<version>2.1.3.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
->>>>>>> LoginFeature
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>User-Service</artifactId>
@@ -73,8 +67,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
-=======
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -101,7 +94,7 @@
     <artifactId>postgresql</artifactId>
     <version>42.2.8</version>
 </dependency>
->>>>>>> LoginFeature
+
 	</dependencies>
 
 	<dependencyManagement>
