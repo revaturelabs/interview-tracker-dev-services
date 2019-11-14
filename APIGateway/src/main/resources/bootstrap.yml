@@ -8,7 +8,7 @@ eureka:
 
 spring:
   application:
-    name: User Service
+    name: User API Gateway
     
 zuul:
   routes:
