@@ -18,20 +18,34 @@ import com.revature.service.UserRepository;
 @CrossOrigin(origins="*")
 @RequestMapping(value="/users")
 public class UserController {
-
+  
+	@Autowired
 	private UserRepository repository;
-
-
+	
 	List<UserBean> list;
-
-	@GetMapping(value = "/users")
-	public UserBean getUser() {
-//		list.add(new UserBean(1, "bodhi", "bacon"));
-//		list.add(new UserBean(2, "mike", "jordan"));
-//		list.add(new UserBean(3, "tarzan", "jungle"));
+	
+	@GetMapping(value="/getUsers")
+	public UserBean getAll() {
+		list.add(new UserBean(1, "bodhi", "bacon"));
+		list.add(new UserBean(2, "mike", "jordan"));
+		list.add(new UserBean(3, "tarzan", "jungle"));
 		return new UserBean(1, "bodhi", "bacon");
-//		return list;
+		
 	}
+	
+	/**
+	 * Created by Brittany Tinnin and William Liederer
+	 * Very basic method to save a user to database
+	 * @return
+	 */
+	 @GetMapping(value = "/users")
+	    public String save() {
+	        UserBean dev = new UserBean(2,"admin","admin");
+	        repository.save(dev);
+	        return "worked";
+	    }
+	
+	
 	
 	
 	
