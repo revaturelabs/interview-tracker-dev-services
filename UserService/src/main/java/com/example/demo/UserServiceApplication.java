@@ -1,25 +1,22 @@
 package com.example.demo;
 
 
-import org.springframework.boot.SpringApplication; 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 
-<<<<<<< HEAD
 
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-=======
->>>>>>> LoginFeature
+
+
+
 
 
 
 
 @SpringBootApplication
-<<<<<<< HEAD
-@EnableFeignClients
-
-=======
->>>>>>> LoginFeature
+@EnableHystrix
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
