@@ -10,8 +10,14 @@ import com.example.model.User;
 
 import feign.RequestLine;
 
+<<<<<<< HEAD
+//@FeignClient("users")
+@FeignClient(name="service",configuration = FeignClientConfiguration.class)
+public interface UserClient {
+=======
 @FeignClient("users")
 public interface UserClient extends JpaRepository<User, Integer> {
+>>>>>>> 0c36bb60e15e3fa1da7ec390dc63f92d309e9041
 
 //	 	@RequestLine("GET /{isbn}")
 //	    BookResource findByIsbn(@Param("isbn") String isbn);
