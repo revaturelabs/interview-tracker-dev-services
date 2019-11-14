@@ -40,16 +40,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-<<<<<<< HEAD
-		
-=======
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
->>>>>>> LoginFeature
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -73,8 +71,6 @@
 		</plugins>
 	</build>
 
-<<<<<<< HEAD
+
 </project>
-=======
-</project>
->>>>>>> LoginFeature
+
