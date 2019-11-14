@@ -8,12 +8,14 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.example.model.User;
+
 @SpringBootTest
 class UserServiceApplicationTests {
 	private UserClient uc;
 	@Test
 	void contextLoads() {
-		User user = uc.getUser(0);
+		User user = uc.findById(0);
 		assertEquals("Username", user.getUsername());
 	}
 	@Test

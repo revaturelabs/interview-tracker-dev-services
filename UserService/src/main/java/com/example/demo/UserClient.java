@@ -3,6 +3,7 @@ package com.example.demo;
 import java.util.List;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.model.User;
@@ -10,7 +11,7 @@ import com.example.model.User;
 import feign.RequestLine;
 
 @FeignClient("users")
-public interface UserClient {
+public interface UserClient extends JpaRepository<User, Integer> {
 
 //	 	@RequestLine("GET /{isbn}")
 //	    BookResource findByIsbn(@Param("isbn") String isbn);
@@ -33,7 +34,8 @@ public interface UserClient {
 	
 //	User findById();
 	@RequestLine("GET /users/{id}")
-	User getUser(@PathVariable("id") int id);
+	User findById(@PathVariable("id") int id);
+//	User getUser(@PathVariable("id") int id);
 	
 	@RequestLine("POST")
 	void create(User user);
