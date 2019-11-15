@@ -1,5 +1,9 @@
 package com.example;
-
+/**
+ * @author joseph franklin davis
+ * 
+ * ZuulConfigurations from pre and post filters
+ */
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
