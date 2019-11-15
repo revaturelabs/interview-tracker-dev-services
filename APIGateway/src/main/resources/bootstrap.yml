@@ -1,0 +1,18 @@
+server:
+  port: 8765
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+spring:
+  application:
+    name: User API Gateway
+    
+zuul:
+  routes:
+    user-service:
+      path: /user/**
+      service-id: user-service
+      strip-prefix: false
