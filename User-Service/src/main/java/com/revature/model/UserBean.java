@@ -33,7 +33,6 @@ public class UserBean {
 
 	public UserBean() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public UserBean(int id, String username, String password) {

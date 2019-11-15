@@ -13,7 +13,6 @@ public class PostFilter extends ZuulFilter{
 
 	@Override
 	public Object run() throws ZuulException {
-		System.out.println("post filtering");
 		return null;
 	}
 

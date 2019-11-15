@@ -43,9 +43,7 @@ public class UserController {
 	 */
 	@PostMapping(value = "/login")
 	public @ResponseBody UserBean login(@RequestBody UserBean user) {
-		System.out.println(user);
 		for (UserBean u : repository.findAll()) {
-			System.out.println(user);
 			if (user.getUsername().equals(u.getUsername())) {
 				return u;
 			}
