@@ -45,15 +45,6 @@ public class UserController {
 	        return "worked";
 	    }
 	
-	
-	
-	
-	
-	@GetMapping(value = "/create")
-    public void save() {
-		UserBean user = new UserBean(0, "anotherU", "pass");
-        repository.save(user);
-    }
 	/**
 	 * 
 	 * @param user
