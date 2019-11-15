@@ -1,6 +1,5 @@
 package com.revature.controller;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -20,30 +19,23 @@ import com.revature.service.UserRepository;
 public class UserController {
 
 	private UserRepository repository;
-
-
-	List<UserBean> list;
-
-	@GetMapping(value = "/users")
-	public UserBean getUser() {
-//		list.add(new UserBean(1, "bodhi", "bacon"));
-//		list.add(new UserBean(2, "mike", "jordan"));
-//		list.add(new UserBean(3, "tarzan", "jungle"));
-		return new UserBean(1, "bodhi", "bacon");
-//		return list;
-	}
 	
 	
-	
+	/**
+	 * <p>Create User Method</p>
+	 * @author Brittany Tinnin
+	 */
 	@GetMapping(value = "/create")
     public void save() {
 		UserBean user = new UserBean(0, "anotherU", "pass");
         repository.save(user);
     }
+	
 	/**
-	 * 
-	 * @param user
-	 * @return
+	 * <p>Login Method</p>
+	 * @author Brittany Tinnin
+	 * @param user the user information from logging in
+	 * @return the user information after username is verified
 	 */
 	@PostMapping(value="/login")
 	public @ResponseBody UserBean login(@RequestBody UserBean user) {
@@ -57,6 +49,11 @@ public class UserController {
 		return null;
 	}
 	
+	/**
+	 * <p>Find all users Method</p>
+	 * @author Brittany Tinnin
+	 * @return a list of all users
+	 */
 	@GetMapping(value="/allusers")
 	public Iterable<UserBean> findAll() {
 		return repository.findAll();
