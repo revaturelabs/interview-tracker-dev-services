@@ -10,10 +10,11 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 
 
-
-
-
-
+/**
+ * 
+ * @author Brittany Tinnin
+ *
+ */
 
 @SpringBootApplication
 @EnableHystrix

@@ -1,7 +1,5 @@
 package com.revature.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,28 +13,17 @@ import com.revature.model.UserBean;
 import com.revature.service.UserRepository;
 
 @RestController
-@CrossOrigin(origins="*")
-@RequestMapping(value="/users")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/users")
 public class UserController {
-  
+
 	@Autowired
 	private UserRepository repository;
-	
-	List<UserBean> list;
-	
-	@GetMapping(value="/getUsers")
-	public UserBean getAll() {
-		list.add(new UserBean(1, "bodhi", "bacon"));
-		list.add(new UserBean(2, "mike", "jordan"));
-		list.add(new UserBean(3, "tarzan", "jungle"));
-		return new UserBean(1, "bodhi", "bacon");
-		
-	}
-	
+
 	/**
-	 * Created by Brittany Tinnin and William Liederer
-	 * Very basic method to save a user to database
-	 * @return
+	 * <p>Very basic method to save a user to database</p>
+	 * 
+	 * @author William Liederer and Brittany Tinnin
 	 */
 	 @GetMapping(value = "/users")
 	    public String save() {
@@ -44,29 +31,40 @@ public class UserController {
 	        repository.save(dev);
 	        return "worked";
 	    }
-	
+
 	/**
+	 * <p>
+	 * Login Method
+	 * </p>
 	 * 
-	 * @param user
-	 * @return
+	 * @author Brittany Tinnin
+	 * @param user the user information from logging in
+	 * @return the user information after username is verified
 	 */
-	@PostMapping(value="/login")
+	@PostMapping(value = "/login")
 	public @ResponseBody UserBean login(@RequestBody UserBean user) {
 		System.out.println(user);
-		for(UserBean u : repository.findAll()) {
+		for (UserBean u : repository.findAll()) {
 			System.out.println(user);
-			if(user.getUsername().equals(u.getUsername())) {
+			if (user.getUsername().equals(u.getUsername())) {
 				return u;
 			}
 		}
 		return null;
 	}
-	
-	@GetMapping(value="/allusers")
+
+	/**
+	 * <p>
+	 * Find all users Method
+	 * </p>
+	 * 
+	 * @author Brittany Tinnin
+	 * @return a list of all users
+	 */
+	@GetMapping(value = "/allusers")
 	public Iterable<UserBean> findAll() {
 		return repository.findAll();
 	}
-	
 
 	public UserRepository getRepository() {
 		return repository;
@@ -76,6 +74,5 @@ public class UserController {
 	public void setRepository(UserRepository repository) {
 		this.repository = repository;
 	}
-	
 
 }

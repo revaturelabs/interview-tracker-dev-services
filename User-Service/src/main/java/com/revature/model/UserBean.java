@@ -7,6 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+/**
+ * 
+ * @author Brittany Tinnin
+ *
+ *<p>User Model</p>
+ */
 @Entity
 @Table(name="users")
 public class UserBean {
@@ -16,8 +23,10 @@ public class UserBean {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
+	
 	@Column(name="username")
 	private String username;
+	
 	
 	@Column(name="user_password")
 	private String password;
