@@ -1,6 +1,5 @@
 package com.revature.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,51 +13,58 @@ import com.revature.model.UserBean;
 import com.revature.service.UserRepository;
 
 @RestController
-@CrossOrigin(origins="*")
-@RequestMapping(value="/users")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/users")
 public class UserController {
 
+	@Autowired
 	private UserRepository repository;
-	
-	
+
 	/**
-	 * <p>Create User Method</p>
-	 * @author Brittany Tinnin
+	 * <p>Very basic method to save a user to database</p>
+	 * 
+	 * @author William Liederer and Brittany Tinnin
 	 */
-	@GetMapping(value = "/create")
-    public void save() {
-		UserBean user = new UserBean(0, "anotherU", "pass");
-        repository.save(user);
-    }
-	
+	@GetMapping(value = "/users")
+	public String save() {
+		UserBean dev = new UserBean(2, "admin", "admin");
+		repository.save(dev);
+		return "worked";
+	}
+
 	/**
-	 * <p>Login Method</p>
+	 * <p>
+	 * Login Method
+	 * </p>
+	 * 
 	 * @author Brittany Tinnin
 	 * @param user the user information from logging in
 	 * @return the user information after username is verified
 	 */
-	@PostMapping(value="/login")
+	@PostMapping(value = "/login")
 	public @ResponseBody UserBean login(@RequestBody UserBean user) {
 		System.out.println(user);
-		for(UserBean u : repository.findAll()) {
+		for (UserBean u : repository.findAll()) {
 			System.out.println(user);
-			if(user.getUsername().equals(u.getUsername())) {
+			if (user.getUsername().equals(u.getUsername())) {
 				return u;
 			}
 		}
 		return null;
 	}
-	
+
 	/**
-	 * <p>Find all users Method</p>
+	 * <p>
+	 * Find all users Method
+	 * </p>
+	 * 
 	 * @author Brittany Tinnin
 	 * @return a list of all users
 	 */
-	@GetMapping(value="/allusers")
+	@GetMapping(value = "/allusers")
 	public Iterable<UserBean> findAll() {
 		return repository.findAll();
 	}
-	
 
 	public UserRepository getRepository() {
 		return repository;
@@ -68,6 +74,5 @@ public class UserController {
 	public void setRepository(UserRepository repository) {
 		this.repository = repository;
 	}
-	
 
 }
