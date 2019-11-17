@@ -16,3 +16,7 @@ zuul:
       path: /user/**
       service-id: user-service
       strip-prefix: false
+    interview-service:
+      path: /interview/**
+      service-id: interview-service
+      strip-prefix: false 
