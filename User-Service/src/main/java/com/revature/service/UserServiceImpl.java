@@ -1,9 +1,10 @@
 package com.revature.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired; 
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.revature.RevatureFeignClient;
 import com.revature.model.UserBean;
 
 @Service
@@ -15,8 +16,11 @@ public class UserServiceImpl {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+//	@Autowired
+//	private RevatureFeignClient feignClient;
 
-	private UserRepository repository;
+//	private UserRepository repository;
 
 //	@GetMapping("/create")
 //	public String bulkcreate(){
@@ -27,14 +31,14 @@ public class UserServiceImpl {
 	
 	
 	
-	public UserRepository getRepository() {
-		return repository;
-	}
-
-	@Autowired
-	public void setRepository(UserRepository repository) {
-		this.repository = repository;
-	}
+//	public UserRepository getRepository() {
+//		return repository;
+//	}
+//
+//	@Autowired
+//	public void setRepository(UserRepository repository) {
+//		this.repository = repository;
+//	}
 	
 	
 

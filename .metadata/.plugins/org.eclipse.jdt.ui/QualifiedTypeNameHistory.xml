@@ -13,10 +13,19 @@
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
 <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
-<fullyQualifiedTypeName name="com.revature.model.UserBean"/>
 <fullyQualifiedTypeName name="com.revature.service.UserRepository"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+<fullyQualifiedTypeName name="com.revature.model.UserBean"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
+<fullyQualifiedTypeName name="com.revature.RevatureFeignClient"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="org.springframework.core.codec.Encoder"/>
+<fullyQualifiedTypeName name="org.springframework.http.converter.HttpMessageConverter"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.ObjectFactory"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.http.HttpMessageConverters"/>
+<fullyQualifiedTypeName name="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.support.SpringEncoder"/>
 </qualifiedTypeNameHistroy>
