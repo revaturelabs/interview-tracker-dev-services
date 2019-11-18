@@ -18,9 +18,6 @@ public class PreFilter extends ZuulFilter{
 	public Object run() throws ZuulException {
 		RequestContext rc = RequestContext.getCurrentContext();
 		HttpServletRequest req = rc.getRequest();
-		
-		System.out.println(req.getMethod());
-		System.out.println(req.getRequestURI());
 		return null;
 	}
 

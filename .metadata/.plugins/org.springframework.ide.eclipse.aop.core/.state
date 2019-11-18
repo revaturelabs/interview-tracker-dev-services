@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<<<<<<< HEAD
 <aop-project name="APIGateway"/>
 <aop-project name="ServiceRegistery"/>
 <aop-project name="User-Service"/>
+=======
+<aop-project name="Hystrix"/>
+<aop-project name="APIGateway"/>
+<aop-project name="ServiceRegistery"/>
+<aop-project name="UserService"/>
+<aop-project name="spring-cloud-config-server"/>
+>>>>>>> LoginFeature
 </aop-reference-model>
