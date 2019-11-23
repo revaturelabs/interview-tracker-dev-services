@@ -16,3 +16,15 @@ zuul:
       path: /user/**
       service-id: user-service
       strip-prefix: false
+    interview-service:
+      path: /interview/**
+      service-id: interview-service
+      strip-prefix: false
+      
+ribbon:
+  ConnectTimeout:  10000
+  ReadTimeout:  10000
+  eager-load:
+    enabled: true
+  eureka:
+    enabled: true
