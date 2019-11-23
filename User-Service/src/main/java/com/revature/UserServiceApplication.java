@@ -7,11 +7,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 @SpringBootApplication
-<<<<<<< HEAD
 //@EnableEurekaClient
 @EnableFeignClients
-=======
->>>>>>> LoginFeature
 public class UserServiceApplication {
 
 	public static void main(String[] args) {

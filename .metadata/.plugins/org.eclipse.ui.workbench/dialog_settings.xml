@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-<<<<<<< HEAD
 		<item value="-1" key="dialogHeight"/>
 		<item value="-1" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
-=======
-		<item key="dialogHeight" value="-1"/>
-		<item key="dialogWidth" value="-1"/>
->>>>>>> LoginFeature
 		<list key="orderedElements">
 		</list>
 		<list key="orderedProviders">
 		</list>
-<<<<<<< HEAD
 		<list key="textArray">
 		</list>
 	</section>
-=======
-		<list key="textEntries">
-		</list>
-		<list key="textArray">
-		</list>
-	</section>
-	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ui.wizards.new.file"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.debug.ui.java"/>
-			<item value="org.eclipse.wst.jsdt.ui.java"/>
-			<item value="org.eclipse.pde.PDE"/>
-			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
-			<item value="org.eclipse.pde.userAssistance"/>
-			<item value="org.eclipse.wst.web.ui"/>
-		</list>
-	</section>
->>>>>>> LoginFeature
 </section>

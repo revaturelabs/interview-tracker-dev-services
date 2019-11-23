@@ -1,36 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
-<fullyQualifiedTypeName name="com.example.controller.UserController"/>
-<fullyQualifiedTypeName name="com.example.model.User"/>
-<fullyQualifiedTypeName name="feign.RequestLine"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
-<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
 <fullyQualifiedTypeName name="com.revature.service.UserRepository"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
-<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
-<fullyQualifiedTypeName name="com.revature.model.UserBean"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
-<fullyQualifiedTypeName name="com.revature.RevatureFeignClient"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
-<fullyQualifiedTypeName name="org.springframework.core.codec.Encoder"/>
-<fullyQualifiedTypeName name="org.springframework.http.converter.HttpMessageConverter"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.ObjectFactory"/>
-<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.http.HttpMessageConverters"/>
-<fullyQualifiedTypeName name="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.support.SpringEncoder"/>
-=======
-<fullyQualifiedTypeName name="com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.hystrix.EnableHystrix"/>
->>>>>>> LoginFeature
 </qualifiedTypeNameHistroy>
