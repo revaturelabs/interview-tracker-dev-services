@@ -1,7 +1,7 @@
 package com.revature.controller;
 
 
-import java.util.List;  
+import java.util.List;    
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,18 +14,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.RevatureFeignClient;
+
 import com.revature.model.UserBean;
 import com.revature.service.UserRepository;
+import com.revature.service.UserServiceImpl;
 
 
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping(value = "/users")
 public class UserController {
+	@Autowired
+	private UserServiceImpl us;
 
-
-//	private UserRepository repository;
+	 @GetMapping("/allUsers")
+	    public Iterable<UserBean> getAll() {
+	    	return us.getAllUsers();
+	    }
+	 
 	
 //	private final RevatureFeignClient feignClient;
 
@@ -33,13 +39,6 @@ public class UserController {
 //	public UserController(RevatureFeignClient feignClient) {
 //        this.feignClient = feignClient;
 //    }
-
-	List<UserBean> list;
-
-	
-
-
-	
 
 	@Autowired
 	private UserRepository repository;
