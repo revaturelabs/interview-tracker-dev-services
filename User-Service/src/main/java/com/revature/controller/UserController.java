@@ -5,10 +5,12 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.UnauthorizedException;
 import com.revature.model.UserBean;
 import com.revature.service.UserRepository;
 
@@ -63,14 +65,14 @@ public class UserController {
 	public Iterable<UserBean> findAll() {
 		return repository.findAll();
 	}
-
-	public UserRepository getRepository() {
-		return repository;
+	
+	@PostMapping(value = "/authorize")
+	public boolean authorizeUser(@RequestHeader(name = "auth") String token) {
+		UserBean u = repository.findByUsername(token);
+		if(u == null) {
+			throw new UnauthorizedException();
+		} else {
+			return true;
+		}
 	}
-
-	@Autowired
-	public void setRepository(UserRepository repository) {
-		this.repository = repository;
-	}
-
 }
