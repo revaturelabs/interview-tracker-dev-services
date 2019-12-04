@@ -21,7 +21,7 @@ import com.revature.UnauthorizedException;
 
 import com.revature.model.UserBean;
 import com.revature.service.UserRepository;
-import com.revature.service.UserServiceImpl;
+//import com.revature.service.UserServiceImpl;
 
 
 @RestController
