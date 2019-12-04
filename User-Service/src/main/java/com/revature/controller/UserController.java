@@ -1,7 +1,7 @@
 package com.revature.controller;
 
 
-import java.util.List;    
+import java.util.List;     
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,11 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-<<<<<<< HEAD
 
-=======
+
 import com.revature.UnauthorizedException;
->>>>>>> development
+
 import com.revature.model.UserBean;
 import com.revature.service.UserRepository;
 import com.revature.service.UserServiceImpl;
@@ -30,37 +29,19 @@ import com.revature.service.UserServiceImpl;
 @RequestMapping(value = "/users")
 public class UserController {
 	@Autowired
-	private UserServiceImpl us;
-
-	 @GetMapping("/allUsers")
-	    public Iterable<UserBean> getAll() {
-	    	return us.getAllUsers();
-	    }
-	 
-	
-//	private final RevatureFeignClient feignClient;
-
-//	@Autowired
-//	public UserController(RevatureFeignClient feignClient) {
-//        this.feignClient = feignClient;
-//    }
-
-	@Autowired
 	private UserRepository repository;
-
 
 	/**
 	 * <p>Very basic method to save a user to database</p>
 	 * 
 	 * @author William Liederer and Brittany Tinnin
 	 */
-//	 @GetMapping(value = "/users")
-//	    public String save() {
-//	        UserBean dev = new UserBean(2,"admin","admin");
-//	        feignClient.save(dev);
-//	        return "worked";
-//	    }
-
+	 @GetMapping(value = "/users")
+	    public String save() {
+	        UserBean dev = new UserBean(2,"admin","admin");
+	        repository.save(dev);
+	        return "worked";
+	    }
 
 	/**
 	 * <p>
@@ -75,7 +56,6 @@ public class UserController {
 	public @ResponseBody UserBean login(@RequestBody UserBean user) {
 		for (UserBean u : repository.findAll()) {
 			if (user.getUsername().equals(u.getUsername())) {
-
 				return u;
 			}
 		}
@@ -90,21 +70,6 @@ public class UserController {
 	 * @author Brittany Tinnin
 	 * @return a list of all users
 	 */
-<<<<<<< HEAD
-//	@GetMapping(value = "/allusers")
-//	public Iterable<UserBean> findAll() {
-//		return feignClient.findAll();
-//	}
-
-
-	public UserRepository getRepository() {
-		return repository;
-	}
-
-	@Autowired
-	public void setRepository(UserRepository repository) {
-		this.repository = repository;
-=======
 	@GetMapping(value = "/allusers")
 	public Iterable<UserBean> findAll() {
 		return repository.findAll();
@@ -118,6 +83,5 @@ public class UserController {
 		} else {
 			return true;
 		}
->>>>>>> development
 	}
 }
