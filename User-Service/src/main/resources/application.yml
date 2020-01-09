@@ -1,0 +1,5 @@
+#TODO: Revise DB properties to point to H2.spring:  application:    name: user-service  jpa:    database: POSTGRESQL    show-sql: false    generate-ddl: true    hibernate:      ddl-auto: update    properties:      hibernate:        jdbc:          lob:            non_contextual_creation: false        temp:          user_jdbc_metadata_defaults: false    database-platform: org.hibernate.dialect.PostgreSQLDialect  datasource:    platform: postgres    url: ${JDBC_URL}    password: ${JDBC_PASSWORD}    username: ${JDBC_USERNAME}    hikari:      maximum-pool-size: 2    driver-class-name: org.postgresql.Driver
+
+server:  port: 50111
+
+eureka:  client:    register-with-eureka: true    fetch-registry: true
