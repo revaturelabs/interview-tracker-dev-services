@@ -2,4 +2,4 @@
   h2:    console:      enabled: true
 server:  port: 50111
 
-eureka:  client:    register-with-eureka: true    fetch-registry: true
+eureka:  client:    register-with-eureka: true    fetch-registry: true  instance:    instance-id: ${spring.application.name}:${random.value}
