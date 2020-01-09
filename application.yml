@@ -1,8 +1,7 @@
 server:
   port: 9060
- 
- spring:
-  application:
-    name: InterviewTrackerConfigClient
+spring:
+ application:
+   name: InterviewTrackerConfigClient
 
 message: Routing through application.yml
