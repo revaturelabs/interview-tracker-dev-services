@@ -31,3 +31,4 @@ build/
 .vscode/
 /.metadata/
 /.recommenders/
+User-Service/User_ServiceDB.trace.db
