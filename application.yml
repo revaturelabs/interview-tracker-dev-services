@@ -1,0 +1,17 @@
+server:
+  port: 9060
+spring:
+ application:
+   name: InterviewTrackerConfigClient
+
+message: Routing through application.yml
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
