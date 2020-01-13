@@ -17,22 +17,22 @@ public class UserServiceImpl {
 
 	
 	@Autowired
-	public UserServiceImpl(UserRepository ur) {
+	public UserServiceImpl(UserRepository userRepository) {
 		super();
-		this.ur = ur;
+		this.userRepository = userRepository;
 	}
 
 
 
 	public Iterable<UserBean> getAllUsers() {
-    	return ur.findAll();
+    	return userRepository.findAll();
     }
 	
 	
 //	@Autowired
 //	private RevatureFeignClient feignClient;
 
-	private UserRepository ur;
+	private UserRepository userRepository;
 
 //	@GetMapping("/create")
 //	public String bulkcreate(){
