@@ -39,5 +39,15 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
+message: Routing through application.yml 
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
 
 
