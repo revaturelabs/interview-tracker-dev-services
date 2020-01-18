@@ -15,14 +15,30 @@ spring:
 zuul:
   routes:
     user-service:
-      path: /users/**
-      service-id: user-service
-      strip-prefix: false
+      path: /user/**
+      url: http://localhost:8765/user-service/users/
+      strip-prefix: true
     interview-service:
       path: /interview/**
-      service-id: interview-service
-      strip-prefix: false
-      
+      url: http://localhost:8765/interview-service/interviews/
+      strip-prefix: true
+    comment-service:
+      path: /comment/**
+      url: http://localhost:8765/interview-service/comment/
+      strip-prefix: true
+    profile-service:
+      path: /profile/**
+      url: http://localhost:8765/interview-service/profiles/
+      strip-prefix: true
+    skill-service:
+      path: /skill/**
+      url: http://localhost:8765/interview-service/skills/
+      strip-prefix: true  
+    job-service:
+      path: /job/**
+      url: http://localhost:8765/interview-service/jobs/
+      strip-prefix: true  
+   
 ribbon:
   ConnectTimeout:  10000
   ReadTimeout:  10000
