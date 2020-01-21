@@ -1,0 +1,30 @@
+server:
+  port: 8765
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+spring:
+  application:
+    name: User API Gateway
+    
+zuul:
+  routes:
+    user-service:
+      path: /user/**
+      service-id: user-service
+      strip-prefix: false
+    interview-service:
+      path: /interview/**
+      service-id: interview-service
+      strip-prefix: false
+      
+ribbon:
+  ConnectTimeout:  10000
+  ReadTimeout:  10000
+  eager-load:
+    enabled: true
+  eureka:
+    enabled: true

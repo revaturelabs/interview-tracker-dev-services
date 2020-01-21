@@ -29,5 +29,3 @@ build/
 
 ### VS Code ###
 .vscode/
-User-Service/User_ServiceDB.trace.db
-User-Service/User_ServiceDB.mv.db

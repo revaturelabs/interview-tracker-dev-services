@@ -2,9 +2,11 @@ server:
   port: 8765
 
 eureka:
+  instance:    instance-id: ${spring.application.name}:${random.value}
   client:
     fetch-registry: true
     register-with-eureka: true
+    service-url:      defaultZone: http://localhost:8761/eureka
 
 spring:
   application:
@@ -14,13 +16,29 @@ zuul:
   routes:
     user-service:
       path: /user/**
-      service-id: user-service
-      strip-prefix: false
+      url: http://localhost:8765/user-service/users/
+      strip-prefix: true
     interview-service:
       path: /interview/**
-      service-id: interview-service
-      strip-prefix: false
-      
+      url: http://localhost:8765/interview-service/interviews/
+      strip-prefix: true
+    comment-service:
+      path: /comment/**
+      url: http://localhost:8765/interview-service/comment/
+      strip-prefix: true
+    profile-service:
+      path: /profile/**
+      url: http://localhost:8765/interview-service/profiles/
+      strip-prefix: true
+    skill-service:
+      path: /skill/**
+      url: http://localhost:8765/interview-service/skills/
+      strip-prefix: true  
+    job-service:
+      path: /job/**
+      url: http://localhost:8765/interview-service/jobs/
+      strip-prefix: true  
+   
 ribbon:
   ConnectTimeout:  10000
   ReadTimeout:  10000

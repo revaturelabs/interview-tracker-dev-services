@@ -28,8 +28,20 @@ import com.revature.service.UserRepository;
 @CrossOrigin(origins = "*")
 @RequestMapping(value = "/users")
 public class UserController {
-	@Autowired
+	
 	private UserRepository repository;
+
+	public UserController() {
+	}
+	
+	
+	@Autowired
+	public UserController(UserRepository repository) {
+		super();
+		this.repository = repository;
+	}
+
+
 
 	/**
 	 * <p>Very basic method to save a user to database</p>

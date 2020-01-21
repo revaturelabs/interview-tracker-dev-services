@@ -13,19 +13,26 @@ public class UserServiceImpl {
 	
 	
 	public UserServiceImpl() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
+
 	
+	@Autowired
+	public UserServiceImpl(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
+
+
+
 	public Iterable<UserBean> getAllUsers() {
-    	return ur.findAll();
+    	return userRepository.findAll();
     }
 	
 	
 //	@Autowired
 //	private RevatureFeignClient feignClient;
 
-	private UserRepository ur;
+	private UserRepository userRepository;
 
 //	@GetMapping("/create")
 //	public String bulkcreate(){
@@ -33,18 +40,6 @@ public class UserServiceImpl {
 //	repository.save(new UserBean(1, "Rajesh", "Bhojwani"));
 //	return "Customers are created";
 //	}
-	
-	
-	
-	public UserRepository getRepository() {
-		return ur;
-	}
-
-	@Autowired
-	public void setRepository(UserRepository ur) {
-		this.ur = ur;
-	}
-	
 	
 
 }
