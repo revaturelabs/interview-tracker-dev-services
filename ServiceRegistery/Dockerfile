@@ -3,6 +3,7 @@ FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ARG JAVA_OPTS
 ENV JAVA_OPTS=$JAVA_OPTS
+RUN mvn package
 ADD target/ServiceRegistery-0.0.1-SNAPSHOT.jar serviceregistery.jar
 EXPOSE 8761
 # ENTRYPOINT exec java $JAVA_OPTS -jar serviceregistery.jar
